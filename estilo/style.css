@@ -275,6 +275,29 @@ footer p{
     padding: 20px;
 }
 
+.bullets{
+    position: absolute;
+    z-index: 5;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.bullets span{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #999;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+}
+
+.bullets span.active-slider{
+    background-color: white;
+}
+
 @media screen and (max-width: 768px){
     .w50{
         width: 100%;
