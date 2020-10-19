@@ -14,6 +14,11 @@ define('INCLUDE_PATH_PAINEL', INCLUDE_PATH . 'painel/');
 
 
 
+define('HOST', 'localhost');
+define('USER', 'root');
+define('DATABASE', 'projeto1-Dankicode');
+define('PASSWORD', '');
+
 
 
 

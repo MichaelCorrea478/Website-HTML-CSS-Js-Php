@@ -9,8 +9,36 @@
     <title>Painel de Controle</title>
 </head>
 <body>
+   
     
 <div class="box-login">
+    <?php
+
+    $pdo = MySql::conectar();
+
+    if (isset($_POST['acao'])) {
+
+        $user = $_POST['user'];
+        $password = $_POST['password'];
+
+        $consulta = $pdo->prepare("SELECT * FROM tb_admin_usuarios WHERE user = :user AND password = :password ");
+        $consulta->bindParam(':user', $user);
+        $consulta->bindParam(':password', $password);
+        $consulta->execute();
+
+        if ($consulta->rowCount() == 1) {
+            $_SESSION['login'] = true;
+            $_SESSION['user'] = $user;
+            $_SESSION['password'] = $password;
+            header('Location: ' . INCLUDE_PATH_PAINEL);
+            die();
+        } else {
+            echo "<div class='box-erro'>Usuário ou senha incorretos.</div>";
+        }
+
+    }
+
+    ?>
     <h2>Faça o Login:</h2>
     <form method="post" action="">
         <input type="text" name="user" placeholder="Login" required>
