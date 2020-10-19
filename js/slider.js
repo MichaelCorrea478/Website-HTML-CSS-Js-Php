@@ -9,16 +9,17 @@ $(function(){
         $('.banner-single').hide();
         $('.banner-single').eq(0).show();
         
-        
+        var content = $('.bullets').html();
         for (var i = 0; i <= maxSlide; i++) {
-            var content = $('.bullets').html();
+            
             if (i == 0) {
                 content += '<span class="active-slider"></span>';
             } else {
                 content += '<span></span>';
             }
-            $('.bullets').html(content);
+            
         }
+        $('.bullets').html(content);
                 
     }
 
@@ -31,8 +32,8 @@ $(function(){
             }
             $('.banner-single').eq(currentSlide).fadeIn(2000);
 
-            $('bullets span').removeClass('active-slider');
-            $('bullets span').eq(currentSlide).addClass('active-slider');
+            $('.bullets span').removeClass('active-slider');
+            $('.bullets span').eq(currentSlide).addClass('active-slider');
 
         }, delay*1000);
     }
