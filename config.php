@@ -19,7 +19,18 @@ define('USER', 'root');
 define('DATABASE', 'projeto1-Dankicode');
 define('PASSWORD', '');
 
+// Funções
 
+function getCargo($idCargo) {
+    $arr = [
+        '0' => 'Normal',
+        '1' => 'Sub Administrador',
+        '2' => 'Administrador',
+    ];
+
+    return $arr[$idCargo];
+
+}
 
 
 

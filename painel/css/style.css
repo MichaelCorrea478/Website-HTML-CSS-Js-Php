@@ -10,6 +10,10 @@ html, body{
     background: gray;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* Página de Login */
 
 .box-login{
@@ -78,16 +82,26 @@ html, body{
     margin: 0 auto;
 }
 
+div.menu-wrapper{
+    width: 300px;
+}
+
 div.menu{
     height: 100%;
     float: left;
     width: 300px;
     background: #455a64;
     overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 header{
-    float: left;
+    position: relative;
+    left: 300px;
     padding: 10px 0;
     background: #78909c;
     width: calc(100% - 300px);
@@ -99,6 +113,112 @@ header{
 
 .logout a{
     color: white;
-    font-size: 20px;
+    font-size: 23px;
+    text-decoration: none;
 }
 
+.logout a > span{
+    font-size: 17px;
+    margin: 0 4px;
+}
+
+.menu-btn{
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+}
+
+div.box-usuario{
+    text-align: center;
+}
+
+div.avatar-usuario{
+    text-align: left;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid #2f3d42;
+}
+
+.avatar-usuario img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.avatar-usuario i{
+    font-size: 50px;
+    color: #2f3d42;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.nome-usuario{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nome-usuario p{
+    color: white;
+    font-size: 16px;
+}
+
+/** Conteúdo principal do painel **/
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 49%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.content{
+    position: relative;
+    left: 300px;
+    width: calc(100% - 300px);
+    padding: 10px;
+}
+
+.box-content{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+
+    .content{
+        width: 100%;
+        left: 0;
+    }
+
+    header{
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .menu-wrapper{
+        width: 200px;
+    }
+}
