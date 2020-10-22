@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans";
 }
 
 html, body{
     height: 100%;
     background: gray;
 }
+
+/* Página de Login */
 
 .box-login{
     max-width: 600px;
@@ -49,6 +52,8 @@ html, body{
     border: 0;
 }
 
+/* Box de Erro **/
+
 .box-erro{
     width: 100%;
     text-align: center;
@@ -59,3 +64,41 @@ html, body{
     padding: 20px;
     margin: 10px 0;
 }
+
+/** Fim da página login **/
+
+/** Painel de Controle **/
+
+.clear{
+    clear: both;
+}
+
+.center{
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+div.menu{
+    height: 100%;
+    float: left;
+    width: 300px;
+    background: #455a64;
+    overflow-y: auto;
+}
+
+header{
+    float: left;
+    padding: 10px 0;
+    background: #78909c;
+    width: calc(100% - 300px);
+}
+
+.logout{
+    float: right;
+}
+
+.logout a{
+    color: white;
+    font-size: 20px;
+}
+

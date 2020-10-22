@@ -292,7 +292,7 @@ footer p{
     display: inline-block;
     position: relative;
     z-index: 5;
-    margin: 0 30px;
+    margin: 0 15px;
 }
 
 .bullets span.active-slider{
