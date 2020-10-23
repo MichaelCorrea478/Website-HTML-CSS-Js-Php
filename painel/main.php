@@ -39,6 +39,21 @@ if (isset($_GET['logout'])) {
                 <p><?=getCargo($_SESSION['cargo'])?></p>
             </div> <!-- nome-usuario -->
         </div> <!-- box-usuario -->
+        <div class="items-menu">
+            <h2>Cadastro</h2>
+                <a href="">Cadastrar Depoimento</a>
+                <a href="">Cadastrar Serviço</a>
+                <a href="">Cadastrar Slides</a>
+            <h2>Gestão</h2>
+                <a href="">Listar Depoimentos</a>
+                <a href="">Listar Serviços</a>
+                <a href="">Listar Slides</a>
+            <h2>Administração do Painel</h2>
+                <a href="">Editar Usuário</a>
+                <a href="">Adicionar Usuários</a>
+            <h2>ConfiguraçãoGeral</h2>
+                <a href="">Editar</a>
+        </div> <!-- items-menu -->
     </div> <!-- menu -->
 </div> <!-- menu-wrapper -->
 <header>
@@ -59,6 +74,37 @@ if (isset($_GET['logout'])) {
 
     <div class="box-content left w100">
 
+        <h3><i class="fas fa-home"></i>  Painel de Controle</h3>
+
+        <div class="box-metricas w33 left">
+            <div class="box-metricas-single">
+                <div class="box-metricas-wrapper">
+                    <h2>Usuários Online</h2>
+                    <p>10</p>
+                </div> <!-- box-metricas-wrapper -->
+            </div> <!-- box-metricas-single -->
+        </div> <!-- box-metricas -->
+
+        <div class="box-metricas w33 left">
+            <div class="box-metricas-single">
+                <div class="box-metricas-wrapper">
+                    <h2>Total de Visitas</h2>
+                    <p>100</p>
+                </div> <!-- box-metricas-wrapper -->
+            </div> <!-- box-metricas-single -->
+        </div> <!-- box-metricas -->
+
+        <div class="box-metricas w33 left">
+            <div class="box-metricas-single">
+                <div class="box-metricas-wrapper">
+                    <h2>Visitas Hoje</h2>
+                    <p>3</p>
+                </div> <!-- box-metricas-wrapper -->
+            </div> <!-- box-metricas-single -->
+        </div> <!-- box-metricas -->
+
+        <div class="clear"></div>
+
     </div> <!-- box-content -->
 
     <div class="box-content left w100">
@@ -75,9 +121,12 @@ if (isset($_GET['logout'])) {
 
     <div class="clear"></div>
 
-<h1>Usuario logado</h1>
-<h2>Painel</h2>
-<p>Usuário: <?=$_SESSION['user']?></p>
+<?php
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
+
+?>
 
 </div> <!-- content -->
 

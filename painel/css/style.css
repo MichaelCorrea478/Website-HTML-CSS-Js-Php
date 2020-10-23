@@ -88,12 +88,12 @@ div.menu-wrapper{
 
 div.menu{
     height: 100%;
+    padding: 0 10px;
     float: left;
     width: 300px;
     background: #455a64;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 10px;
     position: fixed;
     left: 0;
     top: 0;
@@ -169,6 +169,29 @@ div.avatar-usuario{
     font-size: 16px;
 }
 
+div.items-menu{
+    margin-top: 30px;
+}
+
+div.items-menu h2{
+    text-align: left;
+    font-weight: 300;
+    font-size: 17px;
+    background: #2f3d42;
+    color: white;
+    padding: 8px;
+}
+
+div.items-menu a{
+    display: block;
+    padding: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #2f3d42;
+}
+
 /** Conteúdo principal do painel **/
 
 .w100{
@@ -177,6 +200,10 @@ div.avatar-usuario{
 
 .w50{
     width: 49%;
+}
+
+.w33{
+    width: 31%;
 }
 
 .left{
@@ -200,6 +227,25 @@ div.avatar-usuario{
     margin-bottom: 10px;
 }
 
+.box-content h3{
+    margin: 10px;
+}
+
+div.box-metricas{
+    background: #455a64;
+    color: white;
+    margin: 0 1%;
+}
+
+div.box-metricas-single{
+    padding: 8px;
+    font-weight: 300;
+}
+
+div.box-metricas-single h2{
+    font-weight: 300;
+}
+
 @media screen and (max-width: 768px){
     .menu{
         display: none;
@@ -215,6 +261,13 @@ div.avatar-usuario{
         left: 0;
     }
 
+}
+
+@media screen and (max-width: 760px){
+    .box-metricas{
+        width: 100%;
+        margin: 8px 0;
+    }
 }
 
 @media screen and (max-width: 400px){
