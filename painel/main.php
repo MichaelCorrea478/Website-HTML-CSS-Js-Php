@@ -40,8 +40,9 @@ if (isset($_GET['logout'])) {
             </div> <!-- nome-usuario -->
         </div> <!-- box-usuario -->
         <div class="items-menu">
+            <h2 id="home-btn"><a href="<?=INCLUDE_PATH_PAINEL?>"><i class="fas fa-home"></i>  Página Inicial</a></h2>
             <h2>Cadastro</h2>
-                <a href="">Cadastrar Depoimento</a>
+                <a href="cadastrar-depoimento">Cadastrar Depoimento</a>
                 <a href="">Cadastrar Serviço</a>
                 <a href="">Cadastrar Slides</a>
             <h2>Gestão</h2>
@@ -72,61 +73,11 @@ if (isset($_GET['logout'])) {
 
 <div class="content">
 
-    <div class="box-content left w100">
+    <?php
 
-        <h3><i class="fas fa-home"></i>  Painel de Controle</h3>
+    Painel::loadPage();
 
-        <div class="box-metricas w33 left">
-            <div class="box-metricas-single">
-                <div class="box-metricas-wrapper">
-                    <h2>Usuários Online</h2>
-                    <p>10</p>
-                </div> <!-- box-metricas-wrapper -->
-            </div> <!-- box-metricas-single -->
-        </div> <!-- box-metricas -->
-
-        <div class="box-metricas w33 left">
-            <div class="box-metricas-single">
-                <div class="box-metricas-wrapper">
-                    <h2>Total de Visitas</h2>
-                    <p>100</p>
-                </div> <!-- box-metricas-wrapper -->
-            </div> <!-- box-metricas-single -->
-        </div> <!-- box-metricas -->
-
-        <div class="box-metricas w33 left">
-            <div class="box-metricas-single">
-                <div class="box-metricas-wrapper">
-                    <h2>Visitas Hoje</h2>
-                    <p>3</p>
-                </div> <!-- box-metricas-wrapper -->
-            </div> <!-- box-metricas-single -->
-        </div> <!-- box-metricas -->
-
-        <div class="clear"></div>
-
-    </div> <!-- box-content -->
-
-    <div class="box-content left w100">
-
-    </div> <!-- box-content -->
-
-    <div class="box-content left w50">
-
-    </div> <!-- box-content -->
-
-    <div class="box-content right w50">
-
-    </div> <!-- box-content -->
-
-    <div class="clear"></div>
-
-<?php
-echo '<pre>';
-print_r($_SESSION);
-echo '</pre>';
-
-?>
+    ?>
 
 </div> <!-- content -->
 

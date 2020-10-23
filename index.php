@@ -1,5 +1,9 @@
 <?php
     include('./config.php');
+
+    Site::updateUsuarioOnline();
+    Site::contador();
+    
 ?>
 
 <!DOCTYPE html>

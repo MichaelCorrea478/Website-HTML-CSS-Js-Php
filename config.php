@@ -2,6 +2,8 @@
 
 session_start();
 
+date_default_timezone_set('America/Sao_Paulo');
+
 spl_autoload_register(function($class){
     include('classes/' . $class . '.php');
 });
