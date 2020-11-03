@@ -28,6 +28,7 @@
 
         if ($consulta->rowCount() == 1) {
             $info = $consulta->fetch();
+            $_SESSION['id'] = $info['id'];
             $_SESSION['login'] = true;
             $_SESSION['user'] = $user;
             $_SESSION['password'] = $password;

@@ -25,6 +25,7 @@ class Site {
 
         } else {
 
+            $_SESSION['online'] = '';
             self::registraSessao($_SESSION['online']);
 
         }

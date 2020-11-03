@@ -274,6 +274,65 @@ div.box-metricas-single h2{
     width: 50%;
 }
 
+.box-content form{
+    margin: 30px 0;
+}
+
+.box-content .form-group{
+    margin: 15px 0;
+}
+
+.box-content form label{
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+
+.box-content form input[type=text],
+.box-content form input[type=password]{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+
+.box-content form input[type=file]{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.box-content form input[type=submit]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin-top:10px;
+    font-size: 14px;
+    background: #00bfa5;
+    color: white;
+    border: 0;
+}
+
+.box-alert{
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    color: white;
+}
+
+.sucesso{
+    background: #a5d6a7;
+}
+
+.erro{
+    background: #f75353;
+}
+
 @media screen and (max-width: 768px){
     .menu{
         display: none;

@@ -65,17 +65,41 @@ class Painel {
 
     }
 
+    public static function alert($type, $msg) {
+
+        switch ($type) {
+            case 'sucesso':
+                echo "<div class='box-alert sucesso'>{$msg}</div>";
+            break;
+            case 'erro':
+                echo "<div class='box-alert erro'>{$msg}</div>";
+            break;
+
+        }
+
+    }
+
+    public static function validaImagem($imagem) {
+
+        $validas = array('image/jpeg', 'image/jpg', 'image/png', 'image/gif');
+
+        return (in_array($imagem['type'], $validas) && $imagem['size'] < (2*1024*1024));
+
+    }
+
+    public static function uploadFile($file) {
+
+        return move_uploaded_file($file['tmp_name'], DIR_PAINEL . 'uploads/' . $file['name']);
+
+    }
+
+    public static function deleteFile($file) {
+
+        unlink('uploads/' . $file);
+
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

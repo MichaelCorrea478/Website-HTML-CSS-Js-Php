@@ -50,7 +50,7 @@ if (isset($_GET['logout'])) {
                 <a href="">Listar Serviços</a>
                 <a href="">Listar Slides</a>
             <h2>Administração do Painel</h2>
-                <a href="">Editar Usuário</a>
+                <a href="editar-usuario">Editar Usuário</a>
                 <a href="">Adicionar Usuários</a>
             <h2>ConfiguraçãoGeral</h2>
                 <a href="">Editar</a>

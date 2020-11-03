@@ -14,7 +14,7 @@ require 'vendor/autoload.php';
 define('INCLUDE_PATH', 'http://localhost/projeto1-Dankicode/');
 define('INCLUDE_PATH_PAINEL', INCLUDE_PATH . 'painel/');
 
-
+define('DIR_PAINEL', __DIR__ . '/painel/');
 
 define('HOST', 'localhost');
 define('USER', 'root');
